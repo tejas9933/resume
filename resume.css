@@ -1,0 +1,200 @@
+*{
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+    /* donwmload */
+    /* toggle */
+    /* The switch - the box around the slider */
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        border-radius: 50%;
+      }
+      
+      /* Hide default HTML checkbox */
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      
+      /* The slider */
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(15, 15, 15);
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      input:checked + .slider {
+        background-color: #2196F3;
+      }
+      
+      input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+      }
+      
+      input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+      
+      /* Rounded sliders */
+      .slider.round {
+        border-radius: 34px;
+      }
+      
+      .slider.round:before {
+        border-radius: 50%;
+      }
+    /*  */
+    .dark-mode {
+        background-color: black;
+        color: white;
+      }
+      .dark-mode1{
+        text-decoration: none;
+        color: white;
+        font-size: medium;
+      }
+    .header-bg{
+        background-color: antiquewhite;
+    }
+    .info{
+        display: flex;
+       flex-direction: column;
+    }
+    .top{
+        background-color: rgb(208, 222, 222);
+    }
+    .links a{
+        text-decoration: none;
+        color: black;
+        font-size: medium;
+    }
+    .info{
+        margin-right: 25px;
+    }
+    .social-icons{
+        margin-top:30px; 
+     }
+    .social-icons i{
+        font-size: 20px;
+     }
+     .social-icons a {
+         text-decoration: none;
+         font-size: 20px;
+         margin-right: 15px;
+         /* color: black; */
+         display: inline-block;
+         transition: transform 0.5s;
+     }
+     .social-icons a:hover{
+         color: #ff004f;
+         transform: translateX(5px);
+     }
+    
+     /* ============================== education ======================= */
+     .education-list li {
+        list-style-type: none;  
+     }
+     .education-list{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4;
+     }
+    
+     /* interests */
+     .interests li{
+        list-style-type: none; 
+        font-size: large; 
+        text-align: center;
+    
+     }
+     
+    
+    
+    @media only screen and (max-width:600px){
+         /* ============================== download ======================= */
+         .download {
+            font-size: small;
+         }
+         .toggle{
+            font-size: smaller;
+         }
+         /* ============================== Contact ======================= */
+         .contact a{
+            font-size: small;
+            padding-bottom: 5px;
+        }
+    
+    
+    
+         /* ============================== Skills ======================= */
+    
+    .header{
+    flex-wrap: wrap;
+    font-size: small;
+        }
+    .header h1{
+        font-size: large;
+    }
+    
+         /* ============================== Skills ======================= */
+    .skills-title{
+        font-size: medium;
+    }
+    .skills{
+        font-size: small;
+    }
+    
+    
+         /* ==============================  certificate ======================= */
+         .certificate{
+            padding: 5px;
+            font-size: small;
+         }
+         .certificate-title{
+            font-size: medium;
+         }
+    
+    
+         /* ============================== education ======================= */
+    
+        .education-list{
+            display: flex;
+            flex-direction: column;
+         flex-wrap: wrap;   
+         text-align: center;
+         padding: 5px;
+         font-size: small;
+        }
+        .education-title{
+            font-size: medium;
+        }
+         /* ============================== interests ======================= */
+    
+        .interests li{
+            font-size: small;
+        }
+    }
